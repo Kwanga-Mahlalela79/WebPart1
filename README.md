@@ -62,5 +62,4 @@ Kwanga Mahlalela - ST10505829
 <br>www.w3schools.com. (n.d.). CSS Background Image. [online] Available at: https://www.w3schools.com/css/css_background_image.asp [Accessed 18 Sept. 2026]. - **To fix my image error.** </br>
 <br>Claude. (2025). Claude. [online] Available at: https://claude.ai [Accessed 18 Sept. 2026]. - **To fix errors strictly.** </br>
 <br>CodingNepal (2024). ☕ Create A Responsive Coffee Website in HTML CSS & JavaScript | Step-By-Step Tutorial. Available at: https://www.youtube.com/watch?v=MYFgtnKMDp4 [Accessed 18 Sept. 2026]. - **Page decor inspiration** </br>
-<br>Dani Krossing (2022). 5 | HOW TO NAVIGATE BETWEEN PAGES IN HTML | 2023 | Learn HTML and CSS Full Course for Beginners. Available at: https://www.youtube.com/watch?v=_ir9du6fq4Q [Accessed 18 Sept. 2026]. - **Page navigation** </br>
 Dani Krossing (2022). 5 | HOW TO NAVIGATE BETWEEN PAGES IN HTML | 2023 | Learn HTML and CSS Full Course for Beginners. Available at: https://www.youtube.com/watch?v=_ir9du6fq4Q [Accessed 18 Sept. 2026]. - **Navigation through each page**
