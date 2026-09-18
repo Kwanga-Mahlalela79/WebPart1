@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiries | SaniCare Organization</title>
+    <link rel="stylesheet" href="css_file/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <section class="page-hero">
+        <nav>
+            <a href="index.html"><img src="_images/SaniCare Org Logo (1).png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="enquiries.html">ENQUIRIES</a></li>
+                    <li><a href="policy.html">POLICY</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <p class="crumb">ENQUIRIES</p>
+        <h1>Tell us what you need, and we'll point you the right way.</h1>
+        <p>From requesting a care package to reporting a situation that needs urgent attention, this is where every enquiry starts.</p>
+    </section>
+
+    <div class="enquiry-alert">
+        <i class="fa fa-exclamation-circle"></i>
+        <p><strong>If someone is in immediate danger, please contact local emergency services first.</strong> Use "Report a situation" below only for non-emergency alerts you'd like our outreach team to follow up on.</p>
+    </div>
+
+    <div class="enquiry-categories">
+        <div class="enquiry-cat">
+            <i class="fa fa-heart"></i>
+            <h4>Request a care package</h4>
+            <p>For individuals or families who need hygiene support.</p>
+        </div>
+        <div class="enquiry-cat">
+            <i class="fa fa-bullhorn"></i>
+            <h4>Report a situation</h4>
+            <p>Flag a community or person that needs our attention.</p>
+        </div>
+        <div class="enquiry-cat">
+            <i class="fa fa-users"></i>
+            <h4>Volunteer or partner</h4>
+            <p>Join an outreach visit or propose a collaboration.</p>
+        </div>
+        <div class="enquiry-cat">
+            <i class="fa fa-question-circle"></i>
+            <h4>General enquiry</h4>
+            <p>Anything else you'd like to ask us directly.</p>
+        </div>
+    </div>
+
+    <div class="enquiry-form-section">
+        <h2>Submit an enquiry</h2>
+        <p>Fill in the form below and our call center team will follow up as soon as possible.</p>
+        <form onsubmit="return false;">
+            <div class="enquiry-row">
+                <div>
+                    <label for="e-name">Full name</label>
+                    <input type="text" id="e-name" placeholder="Your name" required>
+                </div>
+                <div>
+                    <label for="e-contact">Phone or email</label>
+                    <input type="text" id="e-contact" placeholder="How we can reach you" required>
+                </div>
+            </div>
+
+            <label for="e-type">Type of enquiry</label>
+            <select id="e-type" required>
+                <option value="" disabled selected>Select a category</option>
+                <option value="package">Request a care package</option>
+                <option value="report">Report a situation</option>
+                <option value="volunteer">Volunteer or partner</option>
+                <option value="general">General enquiry</option>
+            </select>
+
+            <label for="e-location">Area / location</label>
+            <input type="text" id="e-location" placeholder="Suburb, town or region">
+
+            <label for="e-details">Details</label>
+            <textarea id="e-details" rows="6" placeholder="Share as much detail as you're comfortable with. Identities are always kept confidential unless you tell us otherwise." required></textarea>
+
+            <button type="submit" class="enquiry-submit">Submit enquiry</button>
+        </form>
+    </div>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>This Non-Profit organization focuses on providing women and girls all care packages for those who are not fortunate enough to purchase. Feminine hygiene products are becoming more out of reach as they become too expensive, big commercial sanitary companies putting dangerous chemicals and some not privileged enough to be taught how to use take care of their bodies. That is where we come in. We provide personal visits, give packages out, create valuable lessons and share stories to those want to be heard.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-tiktok"></i>
+        </div>
+        <p>Made by SaniCare organization</p>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){ navLinks.style.right = "0"; }
+        function hideMenu(){ navLinks.style.right = "-200px"; }
+    </script>
+</body>
+</html>

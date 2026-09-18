@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up — SaniCare Organization</title>
+    <link rel="stylesheet" href="css_file\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <section class="auth-page">
+        <nav>
+            <a href="index.html"><img src="_images\SaniCare Org Logo (1).png"></a>
+        </nav>
+
+        <div class="auth-wrap">
+            <div class="auth-card">
+
+                <div class="auth-tabs">
+                    <button type="button" class="auth-tab active" id="loginTab" onclick="showLogin()">Log In</button>
+                    <button type="button" class="auth-tab" id="signupTab" onclick="showSignup()">Sign Up</button>
+                </div>
+
+                <!-- Login form -->
+                <form class="auth-form" id="loginForm">
+                    <h2>Welcome back</h2>
+                    <p class="auth-subtext">Log in to read and share stories.</p>
+
+                    <label for="loginEmail">Email address</label>
+                    <input type="email" id="loginEmail" placeholder="you@example.com" required>
+
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required>
+
+                    <button type="submit" class="auth-submit">Log In</button>
+                    <p class="auth-switch">Don't have an account? <a href="#" onclick="showSignup(); return false;">Sign up</a></p>
+                </form>
+
+                <!-- Signup form -->
+                <form class="auth-form" id="signupForm" style="display:none;">
+                    <h2>Join SaniCare</h2>
+                    <p class="auth-subtext">Create an account to share and follow stories.</p>
+
+                    <label for="signupName">Full name</label>
+                    <input type="text" id="signupName" placeholder="Your name" required>
+
+                    <label for="signupEmail">Email address</label>
+                    <input type="email" id="signupEmail" placeholder="you@example.com" required>
+
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" placeholder="Create a password" required>
+
+                    <label for="signupConfirm">Confirm password</label>
+                    <input type="password" id="signupConfirm" placeholder="Re-enter your password" required>
+
+                    <button type="submit" class="auth-submit">Sign Up</button>
+                    <p class="auth-switch">Already have an account? <a href="#" onclick="showLogin(); return false;">Log in</a></p>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showLogin(){
+            document.getElementById("loginForm").style.display = "block";
+            document.getElementById("signupForm").style.display = "none";
+            document.getElementById("loginTab").classList.add("active");
+            document.getElementById("signupTab").classList.remove("active");
+        }
+        function showSignup(){
+            document.getElementById("loginForm").style.display = "none";
+            document.getElementById("signupForm").style.display = "block";
+            document.getElementById("signupTab").classList.add("active");
+            document.getElementById("loginTab").classList.remove("active");
+        }
+
+        document.getElementById("loginForm").addEventListener("submit", function(e){
+            e.preventDefault();
+            alert("Login form submitted — connect this to your backend to actually sign users in.");
+        });
+        document.getElementById("signupForm").addEventListener("submit", function(e){
+            e.preventDefault();
+            alert("Sign up form submitted — connect this to your backend to actually create accounts.");
+        });
+    </script>
+</body>
+</html>
