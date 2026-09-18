@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | SaniCare Organization</title>
+    <link rel="stylesheet" href="css_file\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <section class="page-hero">
+        <nav>
+            <a href="index.html"><img src="_images\SaniCare Org Logo (1).png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="enquiries.html">ENQUIRIES</a></li>
+                    <li><a href="policy.html">POLICY</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <p class="crumb">STORIES &amp; UPDATES</p>
+        <h1>Stories told, one community at a time.</h1>
+        <p>Real outreach visits, real updates, and the moments that remind us why this work matters. Identities are kept anonymous unless permission is given.</p>
+    </section>
+
+    <div class="blog-intro">
+        <h2>Latest from the field</h2>
+        <p>Every post here traces back to a real donation or visit &mdash; so you can see exactly where your support goes.</p>
+    </div>
+
+    <div class="blog-grid">
+        <div class="blog-card">
+            <div class="blog-thumb thumb-1"><i class="fa fa-map-marker"></i></div>
+            <div class="blog-card-body">
+                <span class="blog-tag">OUTREACH VISIT</span>
+                <h3>200 care packages delivered across three community centres</h3>
+                <p>Thanks to last month's donation drive, our team spent a weekend distributing packages and running short hygiene workshops for over 150 girls and women.</p>
+                <div class="blog-meta">
+                    <span>12 Sept 2026</span>
+                    <a href="#">Read story &rsaquo;</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <div class="blog-thumb thumb-2"><i class="fa fa-heart"></i></div>
+            <div class="blog-card-body">
+                <span class="blog-tag">PERSONAL STORY</span>
+                <h3>"I didn't know this was something I was allowed to ask for help with"</h3>
+                <p>One recipient's reflection on receiving her first care package, shared with her permission, on what access and information have meant for her confidence.</p>
+                <div class="blog-meta">
+                    <span>3 Sept 2026</span>
+                    <a href="#">Read story &rsaquo;</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <div class="blog-thumb thumb-3"><i class="fa fa-graduation-cap"></i></div>
+            <div class="blog-card-body">
+                <span class="blog-tag">EDUCATION</span>
+                <h3>New hygiene workshop launched for primary schools</h3>
+                <p>We've introduced an age-appropriate lesson plan for younger girls, focused on demystifying the changes their bodies go through &mdash; with zero shame involved.</p>
+                <div class="blog-meta">
+                    <span>27 Aug 2026</span>
+                    <a href="#">Read story &rsaquo;</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <div class="blog-thumb thumb-4"><i class="fa fa-hand-holding-heart"></i></div>
+            <div class="blog-card-body">
+                <span class="blog-tag">DONATION UPDATE</span>
+                <h3>Emergency fundraiser reaches its goal in 48 hours</h3>
+                <p>A flash appeal to support a community affected by flooding raised enough for 80 emergency hygiene kits &mdash; delivered within the week.</p>
+                <div class="blog-meta">
+                    <span>19 Aug 2026</span>
+                    <a href="#">Read story &rsaquo;</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <div class="blog-thumb thumb-5"><i class="fa fa-comments"></i></div>
+            <div class="blog-card-body">
+                <span class="blog-tag">COMMUNITY</span>
+                <h3>What our volunteers wish more people understood</h3>
+                <p>Three long-time volunteers share what keeps them coming back, and what they'd tell someone considering their first outreach visit.</p>
+                <div class="blog-meta">
+                    <span>5 Aug 2026</span>
+                    <a href="#">Read story &rsaquo;</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <div class="blog-thumb thumb-6"><i class="fa fa-bullhorn"></i></div>
+            <div class="blog-card-body">
+                <span class="blog-tag">ADVOCACY</span>
+                <h3>Joining the call for accessible hygiene product policy</h3>
+                <p>An update on the advocacy work we're doing alongside other organisations pushing for menstrual products to be treated as a basic necessity.</p>
+                <div class="blog-meta">
+                    <span>22 Jul 2026</span>
+                    <a href="#">Read story &rsaquo;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>This Non-Profit organization focuses on providing women and girls all care packages for those who are not fortunate enough to purchase. Feminine hygiene products are becoming more out of reach as they become too expensive, big commercial sanitary companies putting dangerous chemicals and some not privileged enough to be taught how to use take care of their bodies. That is where we come in. We provide personal visits, give packages out, create valuable lessons and share stories to those want to be heard.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-tiktok"></i>
+        </div>
+        <p>Made by SaniCare organization</p>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){ navLinks.style.right = "0"; }
+        function hideMenu(){ navLinks.style.right = "-200px"; }
+    </script>
+</body>
+</html>
