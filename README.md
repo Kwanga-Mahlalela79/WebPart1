@@ -61,5 +61,5 @@ Kwanga Mahlalela - ST10505829
 <br>GreatStack (2021). How To Make Website Using HTML & CSS | Full Responsive Multi Page Website Design Step by Step. [online] YouTube. Available at: https://www.youtube.com/watch?v=oYRda7UtuhA [Accessed 14 Aug. 2026]. - **For the HTML Structure and CSS implementation.** </br>
 <br>www.w3schools.com. (n.d.). CSS Background Image. [online] Available at: https://www.w3schools.com/css/css_background_image.asp [Accessed 18 Sept. 2026]. - **To fix my image error.** </br>
 <br>Claude. (2025). Claude. [online] Available at: https://claude.ai [Accessed 18 Sept. 2026]. - **To fix errors strictly.** </br>
-<br>CodingNepal (2024). ☕ Create A Responsive Coffee Website in HTML CSS & JavaScript | Step-By-Step Tutorial. Available at: https://www.youtube.com/watch?v=MYFgtnKMDp4 [Accessed 18 Sept. 2026]. - **Page decor inspiration** </br>
+<br>CodingNepal (2024). ☕ Create A Responsive Coffee Website in HTML CSS & JavaScript | Step-By-Step Tutorial. Available at: https://www.youtube.com/watch?v=MYFgtnKMDp4 [Accessed 18 Sept. 2026]. - **Page Decor inspiration** </br>
 Dani Krossing (2022). 5 | HOW TO NAVIGATE BETWEEN PAGES IN HTML | 2023 | Learn HTML and CSS Full Course for Beginners. Available at: https://www.youtube.com/watch?v=_ir9du6fq4Q [Accessed 18 Sept. 2026]. - **Navigation through each page**
