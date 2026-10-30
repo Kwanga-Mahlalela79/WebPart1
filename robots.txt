@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kwanga-mahlalela79.github.io/WebPart1/sitemap.xml
