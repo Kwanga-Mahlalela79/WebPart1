@@ -1,0 +1,625 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enquiries | SaniCare Organization</title>
+
+    <meta name="description"
+          content="Submit an enquiry to SaniCare Organization for hygiene care packages, community support, volunteering and partnerships.">
+
+    <meta name="keywords"
+          content="SaniCare, enquiries, care packages, hygiene support, volunteering, community outreach, South Africa">
+
+    <meta name="author" content="SaniCare Organization">
+
+    <link rel="stylesheet" href="css_file/style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <section class="page-hero">
+
+        <nav>
+
+            <a href="index.html">
+                <img src="_images/SaniCare Org Logo (1).png"
+                     alt="SaniCare Organization logo">
+            </a>
+
+            <div class="nav-links" id="navLinks">
+
+                <i class="fa fa-times"
+                   onclick="hideMenu()"
+                   aria-label="Close navigation"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="enquiries.html" aria-current="page">ENQUIRIES</a></li>
+                    <li><a href="policy.html">POLICY</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                </ul>
+
+            </div>
+
+            <i class="fa fa-bars"
+               onclick="showMenu()"
+               aria-label="Open navigation"></i>
+
+        </nav>
+
+        <p class="crumb">ENQUIRIES</p>
+
+        <h1>Tell us what you need, and we'll point you the right way.</h1>
+
+        <p>
+            From requesting a care package to reporting a situation
+            that needs attention, this is where every enquiry starts.
+        </p>
+
+    </section>
+
+
+    <!-- ================= EMERGENCY NOTICE ================= -->
+
+    <div class="enquiry-alert">
+
+        <i class="fa fa-exclamation-circle"></i>
+
+        <p>
+            <strong>
+                If someone is in immediate danger, please contact
+                local emergency services first.
+            </strong>
+
+            Use "Report a situation" below only for non-emergency
+            matters that you would like our outreach team to follow up on.
+        </p>
+
+    </div>
+
+
+    <!-- ================= ENQUIRY CATEGORIES ================= -->
+
+    <div class="enquiry-categories">
+
+        <div class="enquiry-cat">
+
+            <i class="fa fa-heart"></i>
+
+            <h4>Request a care package</h4>
+
+            <p>
+                For individuals or families who need hygiene support.
+            </p>
+
+        </div>
+
+
+        <div class="enquiry-cat">
+
+            <i class="fa fa-bullhorn"></i>
+
+            <h4>Report a situation</h4>
+
+            <p>
+                Flag a community or person that needs our attention.
+            </p>
+
+        </div>
+
+
+        <div class="enquiry-cat">
+
+            <i class="fa fa-users"></i>
+
+            <h4>Volunteer or partner</h4>
+
+            <p>
+                Join an outreach visit or propose a collaboration.
+            </p>
+
+        </div>
+
+
+        <div class="enquiry-cat">
+
+            <i class="fa fa-question-circle"></i>
+
+            <h4>General enquiry</h4>
+
+            <p>
+                Anything else you would like to ask us directly.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= ENQUIRY FORM ================= -->
+
+    <div class="enquiry-form-section">
+
+        <h2>Submit an enquiry</h2>
+
+        <p>
+            Fill in the form below and our team will follow up
+            using the contact information you provide.
+        </p>
+
+
+        <form
+            id="enquiryForm"
+            action="https://formsubmit.co/hello@sanicare.org"
+            method="POST"
+            novalidate>
+
+            <!-- Email service settings -->
+
+            <input type="hidden" name="_subject"
+                   value="New SaniCare Website Enquiry">
+
+            <input type="hidden" name="_template"
+                   value="table">
+
+            <!-- Spam protection field -->
+
+            <input type="text" name="_honey"
+                   style="display:none"
+                   tabindex="-1"
+                   autocomplete="off">
+
+
+            <!-- NAME AND CONTACT DETAILS -->
+
+            <div class="enquiry-row">
+
+                <div>
+
+                    <label for="e-name">Full name *</label>
+
+                    <input
+                        type="text"
+                        id="e-name"
+                        name="Full Name"
+                        placeholder="Your full name"
+                        minlength="2"
+                        maxlength="80"
+                        autocomplete="name"
+                        required>
+
+                </div>
+
+
+                <div>
+
+                    <label for="e-contact">
+                        Phone number or email *
+                    </label>
+
+                    <input
+                        type="text"
+                        id="e-contact"
+                        name="Contact Details"
+                        placeholder="Email or +27 phone number"
+                        maxlength="120"
+                        autocomplete="email"
+                        required>
+
+                    <small>
+                        Enter a valid email address or South African
+                        phone number.
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- ENQUIRY CATEGORY -->
+
+            <label for="e-type">Type of enquiry *</label>
+
+            <select
+                id="e-type"
+                name="Enquiry Type"
+                required>
+
+                <option value="">Select a category</option>
+
+                <option value="Care Package Request">
+                    Request a care package
+                </option>
+
+                <option value="Report a Situation">
+                    Report a situation
+                </option>
+
+                <option value="Volunteer or Partnership">
+                    Volunteer or partner
+                </option>
+
+                <option value="General Enquiry">
+                    General enquiry
+                </option>
+
+            </select>
+
+
+            <!-- LOCATION -->
+
+            <label for="e-location">Area / location</label>
+
+            <input
+                type="text"
+                id="e-location"
+                name="Area or Location"
+                placeholder="Suburb, town or region"
+                maxlength="120">
+
+
+            <!-- ENQUIRY DETAILS -->
+
+            <label for="e-details">Details *</label>
+
+            <textarea
+                id="e-details"
+                name="Enquiry Details"
+                rows="6"
+                minlength="20"
+                maxlength="3000"
+                placeholder="Share the details of your enquiry. Please do not include passwords, identity numbers or unnecessary sensitive personal information."
+                required></textarea>
+
+
+            <!-- PRIVACY INFORMATION -->
+
+            <p class="enquiry-privacy-note">
+                Your information will be sent to SaniCare through
+                our external form-processing service for follow-up.
+                Do not use this form to report an emergency or share
+                highly sensitive personal information.
+            </p>
+
+
+            <!-- FORM FEEDBACK -->
+
+            <p
+                id="enquiryFeedback"
+                class="form-feedback"
+                role="status"
+                aria-live="polite"
+                style="display:none;">
+            </p>
+
+
+            <!-- SUBMIT BUTTON -->
+
+            <button
+                type="submit"
+                class="enquiry-submit"
+                id="enquirySubmit">
+
+                Submit enquiry
+
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <section class="footer">
+
+        <h4>About Us</h4>
+
+        <p>
+            This non-profit organization focuses on providing women
+            and girls with care packages for those who are not
+            fortunate enough to purchase them. Feminine hygiene
+            products are becoming increasingly expensive.
+            We provide personal visits, distribute care packages,
+            create valuable lessons and share stories from people
+            who deserve to be heard.
+        </p>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-tiktok"></i>
+        </div>
+
+        <p>Made by SaniCare Organization</p>
+
+    </section>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        "use strict";
+
+
+        // Mobile navigation
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+
+        // Enquiry form elements
+
+        const enquiryForm =
+            document.getElementById("enquiryForm");
+
+        const enquiryFeedback =
+            document.getElementById("enquiryFeedback");
+
+        const enquirySubmit =
+            document.getElementById("enquirySubmit");
+
+
+        // Display success or error messages
+
+        function showEnquiryFeedback(message, type) {
+
+            enquiryFeedback.textContent = message;
+
+            enquiryFeedback.style.display = "block";
+
+            enquiryFeedback.style.padding = "12px";
+
+            enquiryFeedback.style.marginTop = "15px";
+
+            enquiryFeedback.style.borderRadius = "6px";
+
+
+            if (type === "success") {
+
+                enquiryFeedback.style.color = "#155724";
+
+                enquiryFeedback.style.backgroundColor = "#d4edda";
+
+            } else {
+
+                enquiryFeedback.style.color = "#721c24";
+
+                enquiryFeedback.style.backgroundColor = "#f8d7da";
+
+            }
+
+        }
+
+
+        // Validate South African telephone numbers
+
+        function isValidSouthAfricanPhone(contact) {
+
+            const phonePattern =
+                /^(?:\+27|27|0)[6-8][0-9]{8}$/;
+
+            // Remove spaces, brackets and hyphens
+
+            const cleanedContact =
+                contact.replace(/[\s()-]/g, "");
+
+            return phonePattern.test(cleanedContact);
+
+        }
+
+
+        // Validate email addresses
+
+        function isValidEmail(contact) {
+
+            const emailPattern =
+                /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+            return emailPattern.test(contact);
+
+        }
+
+
+        // Handle form submission
+
+        enquiryForm.addEventListener("submit", async function (event) {
+
+            event.preventDefault();
+
+
+            // Collect the form values
+
+            const fullName =
+                document.getElementById("e-name").value.trim();
+
+            const contact =
+                document.getElementById("e-contact").value.trim();
+
+            const enquiryType =
+                document.getElementById("e-type").value;
+
+            const location =
+                document.getElementById("e-location").value.trim();
+
+            const details =
+                document.getElementById("e-details").value.trim();
+
+
+            // Validate the name
+
+            if (fullName.length < 2 || fullName.length > 80) {
+
+                showEnquiryFeedback(
+                    "Please enter a name between 2 and 80 characters.",
+                    "error"
+                );
+
+                return;
+            }
+
+
+            // Validate email or phone number
+
+            if (
+                !isValidEmail(contact) &&
+                !isValidSouthAfricanPhone(contact)
+            ) {
+
+                showEnquiryFeedback(
+                    "Please enter a valid email address or South African phone number.",
+                    "error"
+                );
+
+                return;
+            }
+
+
+            // Validate enquiry category
+
+            if (enquiryType === "") {
+
+                showEnquiryFeedback(
+                    "Please select a type of enquiry.",
+                    "error"
+                );
+
+                return;
+            }
+
+
+            // Validate location length
+
+            if (location.length > 120) {
+
+                showEnquiryFeedback(
+                    "Your location must not exceed 120 characters.",
+                    "error"
+                );
+
+                return;
+            }
+
+
+            // Validate enquiry details
+
+            if (details.length < 20 || details.length > 3000) {
+
+                showEnquiryFeedback(
+                    "Please provide between 20 and 3000 characters in the details section.",
+                    "error"
+                );
+
+                return;
+            }
+
+
+            // Prevent repeated submissions
+
+            enquirySubmit.disabled = true;
+
+            enquirySubmit.textContent = "Submitting...";
+
+
+            try {
+
+                // Prepare form data
+
+                const formData = new FormData(enquiryForm);
+
+                const data = Object.fromEntries(formData.entries());
+
+
+                // Allow the organisation to reply directly
+                // when the visitor provides an email address.
+
+                if (isValidEmail(contact)) {
+
+                    data._replyto = contact;
+
+                }
+
+
+                // Send the enquiry asynchronously using AJAX
+
+                const response = await fetch(
+                    "https://formsubmit.co/ajax/hello@sanicare.org",
+                    {
+                        method: "POST",
+
+                        headers: {
+                            "Content-Type": "application/json",
+                            "Accept": "application/json"
+                        },
+
+                        body: JSON.stringify(data)
+                    }
+                );
+
+
+                const result = await response.json();
+
+
+                if (!response.ok || result.success === "false") {
+
+                    throw new Error("The enquiry could not be submitted.");
+
+                }
+
+
+                // Display successful submission message
+
+                showEnquiryFeedback(
+                    "Thank you! Your enquiry has been submitted successfully. Our team will follow up using your contact details.",
+                    "success"
+                );
+
+
+                // Clear the form
+
+                enquiryForm.reset();
+
+
+            } catch (error) {
+
+                console.error("Enquiry form error:", error);
+
+                showEnquiryFeedback(
+                    "We could not submit your enquiry. Please try again or contact hello@sanicare.org directly.",
+                    "error"
+                );
+
+            } finally {
+
+                enquirySubmit.disabled = false;
+
+                enquirySubmit.textContent = "Submit enquiry";
+
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>

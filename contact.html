@@ -1,0 +1,517 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | SaniCare Organization</title>
+
+    <meta name="description"
+          content="Contact SaniCare Organization to ask questions, donate, volunteer or discuss a partnership supporting women's and girls' hygiene.">
+
+    <meta name="keywords"
+          content="SaniCare, contact, women's health, hygiene support, donations, volunteering, South Africa">
+
+    <meta name="author" content="SaniCare Organization">
+
+    <link rel="stylesheet" href="css_file/style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <section class="page-hero">
+
+        <nav>
+            <a href="index.html">
+                <img src="_images/SaniCare Org Logo (1).png"
+                     alt="SaniCare Organization logo">
+            </a>
+
+            <div class="nav-links" id="navLinks">
+
+                <i class="fa fa-times"
+                   onclick="hideMenu()"
+                   aria-label="Close navigation"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html" aria-current="page">CONTACT</a></li>
+                    <li><a href="enquiries.html">ENQUIRIES</a></li>
+                    <li><a href="policy.html">POLICY</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                </ul>
+
+            </div>
+
+            <i class="fa fa-bars"
+               onclick="showMenu()"
+               aria-label="Open navigation"></i>
+        </nav>
+
+        <p class="crumb">GET IN TOUCH</p>
+
+        <h1>We'd love to hear from you.</h1>
+
+        <p>
+            Whether you want to donate, volunteer, partner with us,
+            or ask a question, reach out below and someone from our
+            team will get back to you.
+        </p>
+
+    </section>
+
+
+    <!-- ================= CONTACT CONTENT ================= -->
+
+    <div class="contact-wrap">
+
+        <!-- CONTACT INFORMATION -->
+
+        <div class="contact-info">
+
+            <h2>Contact details</h2>
+
+            <p>
+                Prefer to reach us directly? Use any of the details
+                below, or send us a message using the form.
+            </p>
+
+            <div class="contact-detail">
+
+                <i class="fa fa-envelope"></i>
+
+                <div>
+                    <h4>Email</h4>
+                    <p>
+                        <a href="mailto:hello@sanicare.org">
+                            hello@sanicare.org
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-detail">
+
+                <i class="fa fa-phone"></i>
+
+                <div>
+                    <h4>Phone</h4>
+                    <p>
+                        <a href="tel:+27729821983">
+                            +27 72 982 1983
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-detail">
+
+                <i class="fa fa-map-marker"></i>
+
+                <div>
+                    <h4>Reach</h4>
+                    <p>
+                        We operate community outreach visits across
+                        the region. Contact us to find out when
+                        we are next in your area.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-detail">
+
+                <i class="fa fa-clock-o"></i>
+
+                <div>
+                    <h4>Office hours</h4>
+                    <p>Monday – Friday, 8:00 – 16:30</p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-social">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+
+        </div>
+
+
+        <!-- CONTACT FORM -->
+
+        <div class="contact-form-card">
+
+            <h3>Send us a message</h3>
+
+            <p>
+                Complete the form below. Fields marked with an
+                asterisk are required.
+            </p>
+
+            <form
+                class="contact-form"
+                id="contactForm"
+                action="https://formsubmit.co/hello@sanicare.org"
+                method="POST"
+                novalidate>
+
+                <!-- Email service settings -->
+
+                <input type="hidden" name="_subject"
+                       value="New SaniCare Website Contact Message">
+
+                <input type="hidden" name="_template"
+                       value="table">
+
+                <!-- Spam protection field -->
+
+                <input type="text" name="_honey"
+                       style="display:none"
+                       tabindex="-1"
+                       autocomplete="off">
+
+
+                <label for="c-name">Full name *</label>
+
+                <input
+                    type="text"
+                    id="c-name"
+                    name="Full Name"
+                    placeholder="Your full name"
+                    minlength="2"
+                    maxlength="80"
+                    autocomplete="name"
+                    required>
+
+
+                <label for="c-email">Email address *</label>
+
+                <input
+                    type="email"
+                    id="c-email"
+                    name="Email Address"
+                    placeholder="you@example.com"
+                    maxlength="120"
+                    autocomplete="email"
+                    required>
+
+
+                <label for="c-reason">Reason for contact *</label>
+
+                <select
+                    id="c-reason"
+                    name="Reason for Contact"
+                    required>
+
+                    <option value="">Select an option</option>
+
+                    <option value="Donation">
+                        I'd like to donate
+                    </option>
+
+                    <option value="Volunteering">
+                        I'd like to volunteer
+                    </option>
+
+                    <option value="Partnership">
+                        Partnership / media enquiry
+                    </option>
+
+                    <option value="General Question">
+                        General question
+                    </option>
+
+                </select>
+
+
+                <label for="c-message">Message *</label>
+
+                <textarea
+                    id="c-message"
+                    name="Message"
+                    rows="5"
+                    minlength="10"
+                    maxlength="2000"
+                    placeholder="Tell us a bit more..."
+                    required></textarea>
+
+
+                <!-- Form feedback -->
+
+                <p
+                    id="contactFeedback"
+                    class="form-feedback"
+                    role="status"
+                    aria-live="polite"
+                    style="display:none;">
+                </p>
+
+
+                <button
+                    type="submit"
+                    class="contact-submit"
+                    id="contactSubmit">
+
+                    Send message
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <section class="footer">
+
+        <h4>About Us</h4>
+
+        <p>
+            This non-profit organization focuses on providing women
+            and girls with care packages for those who are not
+            fortunate enough to purchase them. Feminine hygiene
+            products are becoming increasingly expensive.
+            We provide personal visits, distribute care packages,
+            create valuable lessons and share stories from people
+            who deserve to be heard.
+        </p>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-tiktok"></i>
+        </div>
+
+        <p>Made by SaniCare Organization</p>
+
+    </section>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        "use strict";
+
+
+        // Mobile navigation
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+
+        // Contact form validation and AJAX submission
+
+        const contactForm = document.getElementById("contactForm");
+
+        const contactFeedback =
+            document.getElementById("contactFeedback");
+
+        const contactSubmit =
+            document.getElementById("contactSubmit");
+
+
+        function showContactFeedback(message, type) {
+
+            contactFeedback.textContent = message;
+
+            contactFeedback.style.display = "block";
+
+            contactFeedback.style.padding = "12px";
+
+            contactFeedback.style.marginTop = "15px";
+
+            contactFeedback.style.borderRadius = "6px";
+
+            if (type === "success") {
+
+                contactFeedback.style.color = "#155724";
+                contactFeedback.style.backgroundColor = "#d4edda";
+
+            } else {
+
+                contactFeedback.style.color = "#721c24";
+                contactFeedback.style.backgroundColor = "#f8d7da";
+
+            }
+
+        }
+
+
+        contactForm.addEventListener("submit", async function (event) {
+
+            event.preventDefault();
+
+
+            // Read the form values
+
+            const fullName =
+                document.getElementById("c-name").value.trim();
+
+            const email =
+                document.getElementById("c-email").value.trim();
+
+            const reason =
+                document.getElementById("c-reason").value;
+
+            const message =
+                document.getElementById("c-message").value.trim();
+
+
+            // Validate full name
+
+            if (fullName.length < 2 || fullName.length > 80) {
+
+                showContactFeedback(
+                    "Please enter a name between 2 and 80 characters.",
+                    "error"
+                );
+
+                return;
+            }
+
+
+            // Validate email address
+
+            const emailPattern =
+                /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+            if (!emailPattern.test(email)) {
+
+                showContactFeedback(
+                    "Please enter a valid email address.",
+                    "error"
+                );
+
+                return;
+            }
+
+
+            // Validate reason
+
+            if (reason === "") {
+
+                showContactFeedback(
+                    "Please select a reason for contacting us.",
+                    "error"
+                );
+
+                return;
+            }
+
+
+            // Validate message length
+
+            if (message.length < 10 || message.length > 2000) {
+
+                showContactFeedback(
+                    "Your message must contain between 10 and 2000 characters.",
+                    "error"
+                );
+
+                return;
+            }
+
+
+            // Stop repeated submissions
+
+            contactSubmit.disabled = true;
+            contactSubmit.textContent = "Sending...";
+
+
+            try {
+
+                // Prepare the form data
+
+                const formData = new FormData(contactForm);
+
+                const data = Object.fromEntries(formData.entries());
+
+
+                // Submit asynchronously using AJAX
+
+                const response = await fetch(
+                    "https://formsubmit.co/ajax/hello@sanicare.org",
+                    {
+                        method: "POST",
+
+                        headers: {
+                            "Content-Type": "application/json",
+                            "Accept": "application/json"
+                        },
+
+                        body: JSON.stringify(data)
+                    }
+                );
+
+
+                const result = await response.json();
+
+
+                if (!response.ok || result.success === "false") {
+
+                    throw new Error("The message could not be sent.");
+
+                }
+
+
+                showContactFeedback(
+                    "Thank you! Your message has been submitted successfully.",
+                    "success"
+                );
+
+
+                // Clear the form after successful submission
+
+                contactForm.reset();
+
+
+            } catch (error) {
+
+                console.error("Contact form error:", error);
+
+                showContactFeedback(
+                    "We could not send your message. Please try again or email hello@sanicare.org directly.",
+                    "error"
+                );
+
+            } finally {
+
+                contactSubmit.disabled = false;
+                contactSubmit.textContent = "Send message";
+
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>
